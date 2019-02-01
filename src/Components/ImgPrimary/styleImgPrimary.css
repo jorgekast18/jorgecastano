@@ -1,0 +1,31 @@
+.text {
+    color: white;
+    font-size: 50px; 
+}
+
+.name {
+    color: aqua;
+    font-weight: bold;
+}
+
+.wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.canvas {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./../../Img/principal.jpg");
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+}

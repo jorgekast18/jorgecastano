@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: calc(100% - 50px);
+  z-index: 100;
+  padding: 0px;
+}
+
+
