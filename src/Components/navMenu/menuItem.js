@@ -1,21 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './styleNavMenu.css';
 
+class MenuItem extends Component{
+    
+    constructor(props){
+        super(props);
 
-const MenuItem = ({ name, category}) => {
-
-    const handleItem = () =>{
+        this.state = {
+            name: this.props.name,
+            category: this.props.category,
+            selected: this.props.selected,
+        }
+    }
+    
+    handleItem = () =>{
         debugger;
     }
-    return (
-        <div>
-            <li className='item'>
-                {/* <h3>{name}</h3> */}
-                <a href={category} onClick={handleItem()}>{name}</a>
-            </li>
-        </div> 
-    )
     
+    render(){
+        const { name, category, selected } = this.state
+        return (
+            <div>
+                <li className='item'>
+                    <a 
+                        href={`#${category}`} 
+                        onClick={this.handleItem}
+                        className={selected ? 'itemSelected' : ''}>
+                        {name}
+                    </a>
+                </li>
+            </div> 
+        )
+    }
 }
 
 export default MenuItem;
+

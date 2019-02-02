@@ -2,7 +2,7 @@ import React from 'react';
 import './styleImgPrimary.css';
 
 const ImgPrimary = () => (
-    <div className='canvas'>
+    <div id='home' className='canvas'>
         <div className='wrap'>
             <p className='text'>
                 Hola, soy <span className='name'>Jorge Castaño,</span> <br/>

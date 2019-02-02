@@ -2,18 +2,14 @@ import React, { Component } from 'react';
 import MenuItem from './menuItem'
 import './styleNavMenu.css';
 
-
 class Menu extends Component {
-    onClickItem(){
-        debugger;
-    }
     render(){
         return (
             <div className='navMenu'>
                 <ul>
-                    <MenuItem name='Inicio' category='home'></MenuItem>
-                    <MenuItem name='Mis Proyectos' category='myProjects'></MenuItem>
-                    <MenuItem name='Contacto' category='contact'></MenuItem>
+                    <MenuItem key='home' name='Inicio' category='home' selected={true}></MenuItem>
+                    <MenuItem key='myProjects' name='Mis Proyectos' category='myProjects' selected={false}></MenuItem>
+                    <MenuItem key='contact' name='Contacto' category='contact' selected={false}></MenuItem>
                 </ul>
             </div> 
         )
